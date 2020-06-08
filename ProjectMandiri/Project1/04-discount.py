@@ -39,6 +39,8 @@ def discounted_price(total,discount,minprice=100):
     # MULAI KODEMU DI SINI
     if total >= minprice:
         return(100-discount) * total / 100
+    else:
+        return total
 
 # Cek output kode anda
 hargaDiskon=discounted_price(total_price(counter_item(chart),fruit_price),10,minprice=100)
